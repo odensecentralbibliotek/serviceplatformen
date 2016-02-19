@@ -7,6 +7,16 @@
  * @copyright 2012 OS2 - Offentligt Digitaliseringsfællesskab.
  * See README.md at https://github.com/os2web/valghalla_mail
  */
+/**
+ * Implements hook_permission().
+ */
+function serviceplatformen__permission() {
+  return array(
+    'Administer serviceplatformen' => array(
+      'title' => t('Administer serviceplatformen'),
+    ),
+  );
+}
 
 /**
  * Implements hook_menu().
@@ -16,7 +26,7 @@ function serviceplatformen_menu() {
     'title' => 'Indstillinger for serviceplatformen.dk',
     'page callback' => 'drupal_get_form',
     'page arguments' => array('serviceplatformen_settings'),
-    'access arguments' => array('administer serviceplatformen'),
+    'access arguments' => array('Administer serviceplatformen'),
     'access callback' => TRUE,
     'type' => MENU_NORMAL_ITEM,
   );
