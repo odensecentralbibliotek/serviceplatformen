@@ -27,7 +27,6 @@ function serviceplatformen_menu() {
     'page callback' => 'drupal_get_form',
     'page arguments' => array('serviceplatformen_settings'),
     'access arguments' => array('Administer serviceplatformen'),
-    'access callback' => TRUE,
     'type' => MENU_NORMAL_ITEM,
   );
 
