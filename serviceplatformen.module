@@ -10,7 +10,7 @@
 /**
  * Implements hook_permission().
  */
-function serviceplatformen__permission() {
+function serviceplatformen_permission() {
   return array(
     'Administer serviceplatformen' => array(
       'title' => t('Administer serviceplatformen'),
