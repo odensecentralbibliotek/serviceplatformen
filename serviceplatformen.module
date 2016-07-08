@@ -91,6 +91,13 @@ function serviceplatformen_settings() {
     '#maxlength' => 3,
     '#default_value' => variable_get('serviceplatformen_our_municipalno', ''),
   );
+ 
+  $form['library']['serviceplatformen_selfreg_cat'] = array(
+    '#type' => 'textfield',
+    '#title' => 'Our selfreg cat . fx. (zz)',
+    '#maxlength' => 2,
+    '#default_value' => variable_get('serviceplatformen_selfreg_cat', 'zz'),
+  );
   
   $form['library']['serviceplatformen_adults_ours'] = array(
     '#type' => 'textfield',
